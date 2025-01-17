@@ -1,3 +1,4 @@
+
 """
 6.  Create a dictionary to store your friends' names and birthday.
     WAP using 3 func which takes the dict as argument and implements
