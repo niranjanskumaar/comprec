@@ -11,20 +11,26 @@
 def Display(d): # d is the dictionary
     n = input("Name of person: ")
     
-    if n in d: # check if name exists in dictionary
+    if n in d: # check if name exists in dictionary, ith illenkil there would be errors
         print(d[n], "is the birthday of", n)
+    else:
+        print("No such name")
     
 def Modify(d):
     n = input("Name whose birthday to be changed: ")
     b = input("Birthday")
+
     d[n] = b
     
     print(d)
 
 def Delete(d):
     n = input("Name whose birthday is to be deleted: ")
-    if n in d:
+
+    if n in d: # checking if name exists
         del d[n]
+    else:
+        print("No such name") 
 
     print(d)
 
