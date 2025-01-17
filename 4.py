@@ -1,9 +1,8 @@
-#4 
 
 """
-Def a func that takes an int as argument.
-Returns 0 if num is prime, 1 if not prime.
-Write program to copy numbers of a list to a new list
+4.  Def a func that takes an int as argument.
+    Returns 0 if num is prime, 1 if not prime.
+    Write program to copy numbers of a list to a new list
 """
 
 def prime(x):

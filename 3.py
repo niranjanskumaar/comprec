@@ -1,9 +1,8 @@
-#3
 
 """
-Menu driven program to accept a line of text and,
-    1. Print pallindromic words
-    2. Display longest word
+3.  Menu driven program to accept a line of text and:
+        1. Print pallindromic words
+        2. Display longest word
 """
 
 def pal(words):
