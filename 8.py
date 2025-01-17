@@ -9,21 +9,20 @@
 wf = open("./files/textfile2.txt", "w")
 
 s = "This is a text file.\nThis is the second line.\nThis line contains a.\nThis line does not."
-wf.write(str)
+wf.write(s)
 wf.close()
 
 # displaying the file
 print("Displaying the contents of the file..\n")
 
-rf = open("./files/textfile2,txt")
-lines = rf.readlines()
+rf = open("./files/textfile2.txt")
+text = rf.read()
+print(text)
 
-for l in lines:
-    print(l)
 rf.close()
 
 # creating new file
-nwf = open("./files/newtextfile2.txt", "a")
+nwf = open("./files/newtextfile2.txt", "w")
 rf = open("./files/textfile2.txt")
 
 lines = rf.readlines()
