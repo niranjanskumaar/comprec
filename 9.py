@@ -5,11 +5,11 @@
 
 # creating file
 
-# wf = open("./files/textfile3.txt", "w")
-# text = input("Enter text: ")
+wf = open("./files/textfile3.txt", "w")
+text = input("Enter text: ")
 
-# wf.write(text)
-# wf.close()
+wf.write(text)
+wf.close()
 
 # display the text file
 
