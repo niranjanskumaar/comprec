@@ -1,4 +1,4 @@
-
+#3
 
 """
 Menu driven program to accept a line of text and,
@@ -6,34 +6,27 @@ Menu driven program to accept a line of text and,
     2. Display longest word
 """
 
-def pal(words): # this function prints all the 
-                # palindromic words from the list of words we give to it
+def pal(words):
     print("Pallindromic words:")
     for w in words:
         if w[::-1] == w:
-            print(w) # palindromic word
+            print(w) 
 
-def longest(words): # this function prints the 
-                    # longest word from the list of words we give to it
-    
-    biggest = 0     # biggest wordinte length store cheyyan ulla variable
-    biggest_word = ""  # biggest word entha enn store cheyyannn 
+def longest(words): 
+    biggest = 0
+    biggest_word = ""  
 
     for w in words:
-        if len(w) > biggest:  # ee word nammal ithvare biggest enn paranj vecha wordine kateem length undoooo?
-            
-            biggest = len(w)  # omg, nammal nerathe biggest enn vichariche wordine kaal length und!
-                              # so nammalk ee IPPOTHE WORDinte length aanu BIGGEST enn parayam!
-            
-            biggest_word = w  # OK, IPPOTHE WORD AANU ITHVARE KANDELE BIGGEST WORD!
+        if len(w) > biggest:          
+            biggest = len(w)
+            biggest_word = w
 
     print(biggest_word)
 
-    
-# main program
+
+# Main program
 
 s = input("Text: ")
-
 words = s.split()
 
 while True:
@@ -47,5 +40,7 @@ while True:
         pal(words)
     elif choice == 2:
         longest(words)
-    else:
+    elif choice == 3:
         break
+    else:
+        print("Invalid Option")
